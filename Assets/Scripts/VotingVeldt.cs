@@ -46,9 +46,6 @@ public class VotingVeldt : MonoBehaviour
 
     private void UpdateVotingArea()
     {
-        // GameEntry updatedEntry = sender as GameEntry;
-        // GameObject entryLocator = entryToLayoutChild[updatedEntry];
-        // entryLocator.transform.SetSiblingIndex(upvoteAmount * 10);
         List<GameEntry> tempList = gameEntries;
         tempList.Sort((GameEntry a, GameEntry b) => b.GetUpvoteAmount() - a.GetUpvoteAmount());
         for (int i = 0; i < tempList.Count; i++)

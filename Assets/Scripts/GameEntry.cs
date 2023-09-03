@@ -13,19 +13,36 @@ public class GameEntry : MonoBehaviour
     private int upvoteAmount;
 
     [SerializeField]
+    public EntryType entryType = EntryType.game;
+
+    [SerializeField]
     private TextMeshProUGUI upvoteText;
 
     [SerializeField]
     private Image upvoteSprite;
 
     [SerializeField]
-    private Sprite defaultSprite;
+    private Image downvoteSprite;
 
     [SerializeField]
-    private Sprite upvotedSprite;
+    private Color defaultColor;
+
+    [SerializeField]
+    private Color upvotedColor;
 
     [SerializeField]
     private bool upvoted;
+
+    [SerializeField]
+    private bool downvoted;
+
+    public enum EntryType
+    {
+        game,
+        bomb,
+        angel,
+        defusalFairy,
+    }
 
     private void Awake()
     {
@@ -36,11 +53,20 @@ public class GameEntry : MonoBehaviour
     {
         if (upvoted)
         {
-            upvoteSprite.sprite = upvotedSprite;
+            upvoteSprite.color = upvotedColor;
         }
         else
         {
-            upvoteSprite.sprite = defaultSprite;
+            upvoteSprite.color = defaultColor;
+        }
+
+        if (downvoted)
+        {
+            downvoteSprite.color = upvotedColor;
+        }
+        else
+        {
+            downvoteSprite.color = defaultColor;
         }
     }
 
@@ -49,14 +75,32 @@ public class GameEntry : MonoBehaviour
         if (!upvoted)
         {
             upvoteAmount++;
-            upvoteSprite.sprite = upvotedSprite;
+            upvoteSprite.color = upvotedColor;
             upvoted = true;
         }
         else
         {
             upvoteAmount--;
-            upvoteSprite.sprite = defaultSprite;
+            upvoteSprite.color = defaultColor;
             upvoted = false;
+        }
+        upvoteText.text = upvoteAmount.ToString();
+        OnEntryNumberChanged?.Invoke();
+    }
+
+    public void DownvoteEntry()
+    {
+        if (!downvoted)
+        {
+            upvoteAmount--;
+            downvoteSprite.color = upvotedColor;
+            downvoted = true;
+        }
+        else
+        {
+            upvoteAmount++;
+            downvoteSprite.color = defaultColor;
+            downvoted = false;
         }
         upvoteText.text = upvoteAmount.ToString();
         OnEntryNumberChanged?.Invoke();

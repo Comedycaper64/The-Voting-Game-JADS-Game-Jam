@@ -694,6 +694,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upvoteAmount: 5
+  gameName: 
+  entryType: 0
+  gameNameText: {fileID: 2884257229238337007}
   upvoteText: {fileID: 2884257229952251004}
   upvoteSprite: {fileID: 3817367231996984818}
   downvoteSprite: {fileID: 4265267379111843629}

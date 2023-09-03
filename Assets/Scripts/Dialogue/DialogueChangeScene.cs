@@ -7,5 +7,5 @@ using UnityEngine;
 public class DialogueChangeScene : ConversationNode
 {
     public AudioClip musicTrack;
-    public int changeToScene;
+    public int changeToScene = -1;
 }

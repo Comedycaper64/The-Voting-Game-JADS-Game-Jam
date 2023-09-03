@@ -13,7 +13,13 @@ public class GameEntry : MonoBehaviour
     private int upvoteAmount;
 
     [SerializeField]
+    private string gameName;
+
+    [SerializeField]
     public EntryType entryType = EntryType.game;
+
+    [SerializeField]
+    private TextMeshProUGUI gameNameText;
 
     [SerializeField]
     private TextMeshProUGUI upvoteText;
@@ -47,6 +53,7 @@ public class GameEntry : MonoBehaviour
     private void Awake()
     {
         upvoteText.text = upvoteAmount.ToString();
+        gameNameText.text = gameName;
     }
 
     private void Start()

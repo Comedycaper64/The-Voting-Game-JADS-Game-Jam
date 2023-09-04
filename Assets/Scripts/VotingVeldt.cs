@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TheraBytes.BetterUi;
 using TMPro;
+using UnityEditorInternal.Profiling.Memory.Experimental.FileFormat;
 using UnityEngine;
 
 public class VotingVeldt : MonoBehaviour
@@ -18,6 +19,9 @@ public class VotingVeldt : MonoBehaviour
 
     [SerializeField]
     private GameEntry targetGameEntry;
+
+    [SerializeField]
+    private List<int> safePositions = new List<int>();
     private List<GameEntry> gameEntries = new List<GameEntry>();
     private Dictionary<GameEntry, GameObject> entryToLayoutChild =
         new Dictionary<GameEntry, GameObject>();
@@ -37,7 +41,7 @@ public class VotingVeldt : MonoBehaviour
     private void Awake()
     {
         GameEntry.OnEntryNumberChanged += UpdateVotingArea;
-        SetupVotingArea();
+        //SetupVotingArea();
     }
 
     private void OnDisable()
@@ -89,7 +93,27 @@ public class VotingVeldt : MonoBehaviour
     {
         List<GameEntry> tempList = gameEntries;
         tempList.Sort((GameEntry a, GameEntry b) => b.GetUpvoteAmount() - a.GetUpvoteAmount());
-        if (tempList[0] == targetGameEntry)
+        int targetGameIndex = tempList.IndexOf(targetGameEntry);
+
+        bool bombAdjacent = false;
+        GameEntry bomb = tempList.Find(
+            bombEntry => bombEntry.entryType == GameEntry.EntryType.bomb
+        );
+        if ((bomb != null) && (Mathf.Abs(tempList.IndexOf(bomb) - targetGameIndex) == 1))
+        {
+            bombAdjacent = true;
+        }
+
+        bool angelAdjacent = false;
+        GameEntry angel = tempList.Find(
+            angelEntry => angelEntry.entryType == GameEntry.EntryType.angel
+        );
+        if ((angel != null) && (Mathf.Abs(tempList.IndexOf(angel) - targetGameIndex) == 1))
+        {
+            angelAdjacent = true;
+        }
+
+        if (angelAdjacent || (safePositions.Contains(targetGameIndex) && !bombAdjacent))
         {
             victoryScreen.gameObject.SetActive(true);
         }

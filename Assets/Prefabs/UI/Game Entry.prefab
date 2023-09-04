@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5216805540809512826}
   - component: {fileID: 4873499076385766623}
   - component: {fileID: 4265267379111843629}
+  - component: {fileID: 6513599600274987649}
   m_Layer: 5
   m_Name: Downvote Button
   m_TagString: Untagged
@@ -124,7 +125,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300014, guid: 2c496e21187dbcf4fa6f32db7f94709b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e6c32283865925f43afc8bce3fc5bf67, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -134,6 +135,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6513599600274987649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360533315548284069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 3, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2884257229238337001
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,8 +716,8 @@ MonoBehaviour:
   upvoteText: {fileID: 2884257229952251004}
   upvoteSprite: {fileID: 3817367231996984818}
   downvoteSprite: {fileID: 4265267379111843629}
-  defaultColor: {r: 1, g: 1, b: 1, a: 1}
-  upvotedColor: {r: 1, g: 0.88102376, b: 0, a: 1}
+  defaultColor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 1}
+  upvotedColor: {r: 1, g: 1, b: 1, a: 1}
   upvoted: 0
   downvoted: 0
 --- !u!1 &2884257230477184854
@@ -716,6 +732,7 @@ GameObject:
   - component: {fileID: 2884257230477184858}
   - component: {fileID: 2884257230477184852}
   - component: {fileID: 3817367231996984818}
+  - component: {fileID: 2939638776369495267}
   m_Layer: 5
   m_Name: Upvote Button
   m_TagString: Untagged
@@ -730,17 +747,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2884257230477184854}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2884257230110192197}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 30, y: 0}
+  m_AnchoredPosition: {x: 25, y: 0}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2884257230477184858
@@ -828,7 +845,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300026, guid: 2c496e21187dbcf4fa6f32db7f94709b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e6c32283865925f43afc8bce3fc5bf67, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -838,3 +855,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2939638776369495267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2884257230477184854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.17389464, g: 1, b: 0, a: 0.87058824}
+  m_EffectDistance: {x: 3, y: -3}
+  m_UseGraphicAlpha: 1

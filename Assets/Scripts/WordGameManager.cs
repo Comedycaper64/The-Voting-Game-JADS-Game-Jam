@@ -1,9 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class WordGameManager : MonoBehaviour
 {
+    private float timeLimit = 30f;
+
+    private float timeTracker = 0f;
+    private bool gameActive;
+
+    [SerializeField]
+    private TextMeshProUGUI timeText;
+
     [SerializeField]
     private GameObject wordGameLetterPrefab;
 
@@ -19,9 +28,15 @@ public class WordGameManager : MonoBehaviour
     private float timeBetweenLetterSpawn = 0.5f;
     private Coroutine minigameCoroutine;
 
+    [SerializeField]
+    private Transform victoryScreen;
+
+    [SerializeField]
+    private Transform lossScreen;
+
     private void Start()
     {
-        minigameCoroutine = StartCoroutine(SpawnLetters());
+        //StartWordGame();
         WordGameLetter.OnLetterChosen += TestGivenLetter;
     }
 
@@ -30,12 +45,34 @@ public class WordGameManager : MonoBehaviour
         WordGameLetter.OnLetterChosen -= TestGivenLetter;
     }
 
+    private void Update()
+    {
+        if ((timeTracker > 0f) && gameActive)
+        {
+            timeTracker -= Time.deltaTime;
+            timeText.text = timeTracker.ToString("F2");
+            if (timeTracker <= 0f)
+            {
+                gameActive = false;
+                StopCoroutine(minigameCoroutine);
+                EndWordGame(false);
+            }
+        }
+    }
+
+    public void StartWordGame()
+    {
+        timeTracker = timeLimit;
+        gameActive = true;
+        minigameCoroutine = StartCoroutine(SpawnLetters());
+    }
+
     private IEnumerator SpawnLetters()
     {
         int randomInt = Random.Range(0, 3);
         WordGameLetter wordGameLetter;
-        float randomXLocation = Random.Range(-250f, 250f);
-        float randomYLocation = Random.Range(-250f, 250f);
+        float randomXLocation = Random.Range(-350f, 350f);
+        float randomYLocation = Random.Range(-180f, 250f);
         if (randomInt > 0)
         {
             int randomMissingLetter = Random.Range(0, missingLetters.Count);
@@ -69,12 +106,27 @@ public class WordGameManager : MonoBehaviour
             {
                 //finish minigame
                 StopCoroutine(minigameCoroutine);
+                gameActive = false;
+                EndWordGame(true);
             }
         }
         else
         {
             letterScript.IncorrectLetter();
+            timeTracker -= 1f;
             //reduce time
+        }
+    }
+
+    private void EndWordGame(bool wonWordGame)
+    {
+        if (wonWordGame)
+        {
+            victoryScreen.gameObject.SetActive(true);
+        }
+        else
+        {
+            lossScreen.gameObject.SetActive(true);
         }
     }
 }

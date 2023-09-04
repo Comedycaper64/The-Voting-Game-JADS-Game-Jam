@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44a64bceacac0ac4d8cd34f46f777598, type: 3}
-  m_Name: Test Dialogue
+  m_Name: Test Dialogue 1
   m_EditorClassIdentifier: 
-  characterName: Joe
+  characterName: Kawaiinamite
   characterImages:
-  - {fileID: 21300000, guid: e59ae1b2857eec944af1a34f55b6291c, type: 3}
+  - {fileID: 21300000, guid: ba5af36d84a835c448b3afb61e2b434d, type: 3}
   characterTalkSound: {fileID: 0}
-  leftSideCharacterImage: 1
-  rightSideCharacterImage: 0
+  leftSideCharacterImage: 0
+  rightSideCharacterImage: 1
   sentences:
-  - 'Hmmm
-
-'
-  - This sure is devolving into some hijinks
+  - Let's cause chaos!

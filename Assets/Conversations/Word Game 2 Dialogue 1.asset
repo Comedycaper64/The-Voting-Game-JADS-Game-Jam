@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a64bceacac0ac4d8cd34f46f777598, type: 3}
+  m_Name: Word Game 2 Dialogue 1
+  m_EditorClassIdentifier: 
+  characterName: '"Joe"'
+  characterImages:
+  - {fileID: 21300000, guid: e59ae1b2857eec944af1a34f55b6291c, type: 3}
+  characterTalkSound: {fileID: 8300000, guid: f26e509526f71484fa773e914da9f136, type: 3}
+  characterVoiceClip: {fileID: 8300000, guid: b3b91dcce8aab9f468dd5c84665ddeed, type: 3}
+  leftSideCharacterImage: 1
+  rightSideCharacterImage: 0
+  sentences:
+  - "My...\t\t"
+  - "The Purple-chan fiasco was far more delicious than I could have ever expected.\t"
+  - Ah, the second word game has been deciphered...
+  - Half-Life 2? Feh. What a boring choice. A game barren of any potential stream
+    derailing hijinks.
+  - Oh well, I shall let them have their meagre prize.
+  - They'll need any victory that they can get, for the reckoning of Votos comes!

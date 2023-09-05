@@ -363,8 +363,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Marrow:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4de0179ac2472d94aadaff323354f6ad, type: 2}
-  m_sharedMaterial: {fileID: -8405664081062679002, guid: 4de0179ac2472d94aadaff323354f6ad, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 40921998df27bd142b12482649bb0772, type: 2}
+  m_sharedMaterial: {fileID: 7612015182515126499, guid: 40921998df27bd142b12482649bb0772, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -583,8 +583,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Indeed, hello there
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4de0179ac2472d94aadaff323354f6ad, type: 2}
-  m_sharedMaterial: {fileID: -8405664081062679002, guid: 4de0179ac2472d94aadaff323354f6ad, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 40921998df27bd142b12482649bb0772, type: 2}
+  m_sharedMaterial: {fileID: 7612015182515126499, guid: 40921998df27bd142b12482649bb0772, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

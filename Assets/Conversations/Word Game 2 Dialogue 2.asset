@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a64bceacac0ac4d8cd34f46f777598, type: 3}
+  m_Name: Word Game 2 Dialogue 2
+  m_EditorClassIdentifier: 
+  characterName: ???
+  characterImages:
+  - {fileID: 0}
+  characterTalkSound: {fileID: 8300000, guid: f26e509526f71484fa773e914da9f136, type: 3}
+  characterVoiceClip: {fileID: 0}
+  leftSideCharacterImage: 0
+  rightSideCharacterImage: 1
+  sentences:
+  - And it did come...
+  - Many brave games were felled.
+  - Fire Emblem, Xenoblade 1, and Yakuza Kiwami among them.
+  - Half-Life 2? Feh. What a boring choice. A game barren of any potential stream
+    derailing hijinks.
+  - Oh well, I shall let them have their meagre prize.
+  - They'll need any victory that they can get, for the reckoning of Votos comes!

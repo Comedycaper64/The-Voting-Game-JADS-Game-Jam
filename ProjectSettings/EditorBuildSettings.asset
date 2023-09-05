@@ -6,6 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Main Menu.unity
+    guid: cd61eb32f8115c24497796bcb01a6df1
+  - enabled: 1
+    path: Assets/Scenes/VotingGame1.unity
+    guid: 7e4da11303c4e0048b395c2f19d9cd7f
+  - enabled: 1
+    path: Assets/Scenes/VotingGame2.unity
+    guid: 4f8ada7cce3bb5142a806ee4a247369a
+  - enabled: 1
+    path: Assets/Scenes/VotingGame3.unity
+    guid: fe71a71a8a3ece24bac76acf2b521bcf
+  - enabled: 1
+    path: Assets/Scenes/VotingGame4.unity
+    guid: 2000cdbb3c686804691174417d22d86b
+  - enabled: 1
+    path: Assets/Scenes/WordGame1.unity
+    guid: f74b033d64c0f91479d5b2939470c7eb
+  - enabled: 1
+    path: Assets/Scenes/VotingGame5.unity
+    guid: 6eb1a2df42068954faf928b33934a983
+  - enabled: 1
+    path: Assets/Scenes/VotingGame6.unity
+    guid: 786a1bcc6623bea49943ae07c8c8f9e5
+  - enabled: 1
+    path: Assets/Scenes/VotingGame7.unity
+    guid: 45582386a6f47064caee5a3b615df098
+  - enabled: 1
+    path: Assets/Scenes/VotingGame8.unity
+    guid: 636cddc9d35412a479da037e0f3487a8
+  - enabled: 1
+    path: Assets/Scenes/VotingGame9.unity
+    guid: 7085c89545bdf4641975749a667d2260
+  - enabled: 1
+    path: Assets/Scenes/WordGame2.unity
+    guid: 6ca5b0f68f175624bbf107f76177fbf1
   m_configObjects: {}

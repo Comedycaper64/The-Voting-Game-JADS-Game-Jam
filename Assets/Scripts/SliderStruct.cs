@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SliderStruct : MonoBehaviour
+public class SliderStruct
 {
     private SoundType soundSlider;
     private float value;

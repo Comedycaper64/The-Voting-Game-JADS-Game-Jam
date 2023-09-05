@@ -57,7 +57,14 @@ public class VotingVeldt : MonoBehaviour
             timeText.text = timeTracker.ToString("F2");
             if (timeTracker <= 0f)
             {
-                CheckVictoryStatus();
+                if (CheckIfSafeFromCulling(targetGameEntry))
+                {
+                    victoryScreen.gameObject.SetActive(true);
+                }
+                else
+                {
+                    lossScreen.gameObject.SetActive(true);
+                }
             }
         }
     }
@@ -86,14 +93,22 @@ public class VotingVeldt : MonoBehaviour
         for (int i = 0; i < tempList.Count; i++)
         {
             entryToLayoutChild[tempList[i]].transform.SetSiblingIndex(i);
+            if (CheckIfSafeFromCulling(tempList[i]))
+            {
+                tempList[i].ToggleCutSprite(false);
+            }
+            else
+            {
+                tempList[i].ToggleCutSprite(true);
+            }
         }
     }
 
-    private void CheckVictoryStatus()
+    private bool CheckIfSafeFromCulling(GameEntry gameEntry)
     {
         List<GameEntry> tempList = gameEntries;
         tempList.Sort((GameEntry a, GameEntry b) => b.GetUpvoteAmount() - a.GetUpvoteAmount());
-        int targetGameIndex = tempList.IndexOf(targetGameEntry);
+        int targetGameIndex = tempList.IndexOf(gameEntry);
 
         bool bombAdjacent = false;
         GameEntry bomb = tempList.Find(
@@ -115,11 +130,11 @@ public class VotingVeldt : MonoBehaviour
 
         if (angelAdjacent || (safePositions.Contains(targetGameIndex) && !bombAdjacent))
         {
-            victoryScreen.gameObject.SetActive(true);
+            return true;
         }
         else
         {
-            lossScreen.gameObject.SetActive(true);
+            return false;
         }
     }
 }

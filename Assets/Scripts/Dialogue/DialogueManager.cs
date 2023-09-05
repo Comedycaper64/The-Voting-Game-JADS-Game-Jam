@@ -162,7 +162,21 @@ public class DialogueManager : MonoBehaviour
                 }
                 currentCharacterTalkSound = currentDialogue.characterTalkSound;
                 if (currentCharacterTalkSound)
+                {
                     dialogueAudioSource.clip = currentCharacterTalkSound;
+                }
+                if (currentDialogue.characterVoiceClip)
+                {
+                    Debug.Log("atata");
+                    if (SoundManager.Instance)
+                    {
+                        AudioSource.PlayClipAtPoint(
+                            currentDialogue.characterVoiceClip,
+                            Camera.main.transform.position,
+                            SoundManager.Instance.GetSoundEffectVolume()
+                        );
+                    }
+                }
 
                 DisplayNextSentence();
                 break;
@@ -236,10 +250,15 @@ public class DialogueManager : MonoBehaviour
         currentSentence = sentence;
         currentTextTyping = true;
         dialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+        char[] deconstructedSentence = sentence.ToCharArray();
+        foreach (char letter in deconstructedSentence)
         {
             dialogueText.text += letter;
             dialogueAudioSource.Play();
+            if (letter == deconstructedSentence[deconstructedSentence.Length - 1])
+            {
+                dialogueAudioSource.Stop();
+            }
             yield return new WaitForSeconds(timeBetweenLetterTyping);
         }
         currentTextTyping = false;
@@ -252,6 +271,7 @@ public class DialogueManager : MonoBehaviour
             StopCoroutine(typingCoroutine);
         dialogueText.text = currentSentence;
         currentTextTyping = false;
+        dialogueAudioSource.Stop();
     }
 
     //Performs cleanup from displaying dialogue and tries to dequeue the next conversation node

@@ -7,6 +7,12 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance;
     private AudioSource audioSource;
 
+    private float sfxChangeSampleCooldown = 1f;
+    private float sfxSampleTimer = 0f;
+
+    [SerializeField]
+    private AudioClip sfxChangeSample;
+
     [SerializeField]
     [Range(0f, 1f)]
     private float sfxVolume;
@@ -32,6 +38,14 @@ public class SoundManager : MonoBehaviour
         SoundSlider.OnAnySoundSliderChanged -= SoundSlider_OnAnySliderChanged;
     }
 
+    private void Update()
+    {
+        if (sfxSampleTimer > 0f)
+        {
+            sfxSampleTimer -= Time.deltaTime;
+        }
+    }
+
     private void SetUpSingleton()
     {
         if (FindObjectsOfType(GetType()).Length > 1)
@@ -52,6 +66,11 @@ public class SoundManager : MonoBehaviour
     public void SetSoundEffectVolume(float volume)
     {
         sfxVolume = volume;
+        if (sfxSampleTimer <= 0f)
+        {
+            AudioSource.PlayClipAtPoint(sfxChangeSample, Camera.main.transform.position, sfxVolume);
+            sfxSampleTimer = sfxChangeSampleCooldown;
+        }
     }
 
     public float GetMusicVolume()

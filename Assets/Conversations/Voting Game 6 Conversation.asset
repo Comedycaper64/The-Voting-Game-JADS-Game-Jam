@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e6fd3ac372c8854a8c9d4b1296f9953, type: 3}
+  m_Name: Voting Game 6 Conversation
+  m_EditorClassIdentifier: 
+  conversationNodes:
+  - {fileID: 11400000, guid: d5f25fc3d64280a48b681438f22e6cf5, type: 2}
+  - {fileID: 11400000, guid: 1e0ea1b8a102d334c927ef34447c0ebf, type: 2}
+  - {fileID: 11400000, guid: 38e29d1b34740414e97c59f29d6df5a4, type: 2}
+  - {fileID: 11400000, guid: 54fd8b610e374b342855470eaed20880, type: 2}
+  - {fileID: 11400000, guid: 7953d04b8ca2e964d8409f7419a4f2c4, type: 2}
+  - {fileID: 11400000, guid: 9b3429a87a571bc4eac1d4b39600d766, type: 2}
+  - {fileID: 11400000, guid: 18aee5ebdab3f5f4ebaa9ccc2985e188, type: 2}
+  - {fileID: 11400000, guid: a684e07c379925d44a55b762a0bb89a0, type: 2}
+  - {fileID: 11400000, guid: 48d0eea9695c78646acab68e40e0ef96, type: 2}
+  - {fileID: 11400000, guid: 77f1c7628fec0ba4a82755f6fe630494, type: 2}
+  - {fileID: 11400000, guid: b54d03bc3a0290648a8ccaf83ca50f72, type: 2}
+  - {fileID: 11400000, guid: c14b6a6a32ad7a440b64e09d00f95604, type: 2}
+  - {fileID: 11400000, guid: 752e7d823b456a74ea12390e3549ca39, type: 2}

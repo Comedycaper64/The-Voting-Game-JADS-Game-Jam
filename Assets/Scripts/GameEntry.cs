@@ -31,6 +31,9 @@ public class GameEntry : MonoBehaviour
     private Image downvoteSprite;
 
     [SerializeField]
+    private GameObject cutSprite;
+
+    [SerializeField]
     private Color defaultColor;
 
     [SerializeField]
@@ -116,5 +119,10 @@ public class GameEntry : MonoBehaviour
     public int GetUpvoteAmount()
     {
         return upvoteAmount;
+    }
+
+    public void ToggleCutSprite(bool toggle)
+    {
+        cutSprite.SetActive(toggle);
     }
 }

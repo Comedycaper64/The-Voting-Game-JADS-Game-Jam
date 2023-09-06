@@ -162,14 +162,14 @@ PrefabInstance:
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: lossScreen
       value: 
-      objectReference: {fileID: 1274044921}
+      objectReference: {fileID: 520892822}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: victoryScreen
       value: 
       objectReference: {fileID: 520892822}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: safePositions.Array.size
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: safePositions.Array.data[0]
@@ -177,27 +177,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: safePositions.Array.data[1]
-      value: 1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: safePositions.Array.data[2]
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: safePositions.Array.data[3]
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: safePositions.Array.data[4]
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: safePositions.Array.data[5]
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: safePositions.Array.data[6]
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: safePositions.Array.data[7]

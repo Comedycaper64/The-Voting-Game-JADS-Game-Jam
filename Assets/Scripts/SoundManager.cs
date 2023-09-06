@@ -84,6 +84,12 @@ public class SoundManager : MonoBehaviour
         audioSource.volume = musicVolume;
     }
 
+    public void SetMusicTrack(AudioClip musicTrack)
+    {
+        audioSource.clip = musicTrack;
+        audioSource.Play();
+    }
+
     private void SoundSlider_OnAnySliderChanged(object sender, SliderStruct changedSlider)
     {
         switch (changedSlider.GetSoundSlider())

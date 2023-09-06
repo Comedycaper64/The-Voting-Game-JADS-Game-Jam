@@ -734,7 +734,7 @@ PrefabInstance:
     - target: {fileID: 7368361805073895685, guid: 34722fd7e764fd94ba82013341dafdea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: 865c803eabb4f1e40a22318f1d6e03db, type: 2}
+      objectReference: {fileID: 11400000, guid: aaa0e2a6a0acf63458a7a15ccd663ab8, type: 2}
     - target: {fileID: 7368361805073895685, guid: 34722fd7e764fd94ba82013341dafdea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
@@ -1084,7 +1084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f814a54fa5cbc27478edbbdad69b6f94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: 368d865f4ae304a4a87f36e64fde564f, type: 3}
+  audioClip: {fileID: 8300000, guid: 80b3da4cf3552ea43a4dd46b06136b48, type: 3}
 --- !u!4 &1124454298
 Transform:
   m_ObjectHideFlags: 0

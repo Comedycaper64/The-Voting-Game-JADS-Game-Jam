@@ -167,7 +167,6 @@ public class DialogueManager : MonoBehaviour
                 }
                 if (currentDialogue.characterVoiceClip)
                 {
-                    Debug.Log("atata");
                     if (SoundManager.Instance)
                     {
                         AudioSource.PlayClipAtPoint(
@@ -191,7 +190,10 @@ public class DialogueManager : MonoBehaviour
         }
         if (changeScene.musicTrack)
         {
-            //SoundManager.Instance.SetMusicTrack(changeScene.musicTrack);
+            if (SoundManager.Instance)
+            {
+                SoundManager.Instance.SetMusicTrack(changeScene.musicTrack);
+            }
         }
         EndDialogue();
     }

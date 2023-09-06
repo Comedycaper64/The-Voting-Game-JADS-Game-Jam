@@ -10,20 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44a64bceacac0ac4d8cd34f46f777598, type: 3}
-  m_Name: Voting Game 7 Dialogue 1
+  m_Name: Voting Game 12 Dialogue 23
   m_EditorClassIdentifier: 
   characterName: Purple-chan
   characterImages:
   - {fileID: 21300000, guid: bed17bf26a536a74fb7aaa147c8a5581, type: 3}
   characterTalkSound: {fileID: 8300000, guid: f26e509526f71484fa773e914da9f136, type: 3}
-  characterVoiceClip: {fileID: 8300000, guid: 4538e0fa8f1433b43ad401a962482536, type: 3}
+  characterVoiceClip: {fileID: 0}
   leftSideCharacterImage: 0
   rightSideCharacterImage: 1
   sentences:
-  - '"W-Why won''t you k-kill me senpai? Am I not w-worthy enough to t-trade for
-    one game? Am I s-so pathetic you''re h-holding out for more?"'
-  - Purple-chan begins to cry.
-  - '"F-Fine you win, onii-chan. I''m not w-worth one game. So you get two. Fire
-    Emblem and w-whatever is at the top spot when you k-kill me."'
-  - She turns away.
-  - '"I-I never want to see you again."'
+  - "\"I could\u2026\" Purple-chan considers."

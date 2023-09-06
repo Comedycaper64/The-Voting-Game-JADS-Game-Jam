@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a51ccc1929e764b8585c39c2e31056, type: 3}
   m_Name: Main Menu Change Scene
   m_EditorClassIdentifier: 
-  musicTrack: {fileID: 0}
+  musicTrack: {fileID: 8300000, guid: 75bba7bf285dca341940d55679a764a5, type: 3}
   changeToScene: 1

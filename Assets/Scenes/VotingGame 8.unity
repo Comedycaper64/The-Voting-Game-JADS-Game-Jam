@@ -1649,6 +1649,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Zero Escape,
 
+    Dujanah,
+
     Persona 4 Golden'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 40921998df27bd142b12482649bb0772, type: 2}

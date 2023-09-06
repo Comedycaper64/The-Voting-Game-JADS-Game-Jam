@@ -8,13 +8,23 @@ public class MarbleRaceManager : MonoBehaviour
     public Action OnRaceStart;
     public Action OnRaceEnd;
 
+    [SerializeField]
+    private ParticleSystem windParticleSystem;
+
+    [SerializeField]
+    public GameObject victoryScreen;
+
+    [SerializeField]
+    public GameObject lossScreen;
+
     private void Start()
     {
-        BeginRace();
+        //BeginRace();
     }
 
     public void BeginRace()
     {
+        windParticleSystem.Play();
         OnRaceStart?.Invoke();
     }
 
@@ -23,7 +33,11 @@ public class MarbleRaceManager : MonoBehaviour
         // if winning marble is FE, victory screen, else failure screen
         if (winningMarble.IsPlayerMarble())
         {
-            Debug.Log("ayaya");
+            victoryScreen.SetActive(true);
+        }
+        else
+        {
+            lossScreen.SetActive(true);
         }
         OnRaceEnd?.Invoke();
     }

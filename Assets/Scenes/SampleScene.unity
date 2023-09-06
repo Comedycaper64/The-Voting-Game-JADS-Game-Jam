@@ -906,6 +906,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1878800464}
     m_Modifications:
+    - target: {fileID: 1629177261011905924, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -31.100006
+      objectReference: {fileID: 0}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: lossScreen
       value: 
@@ -1017,22 +1021,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6427401542151139368, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8fc273a6fb5495347823cfd801a0b5fd, type: 3}
-    - target: {fileID: 6427401542151139369, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
-      propertyPath: xPositionThreshhold
-      value: -21
-      objectReference: {fileID: 0}
-    - target: {fileID: 6427401542151139369, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
-      propertyPath: scrollStartLocation.x
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 6427401542151139371, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 20.91
-      objectReference: {fileID: 0}
     - target: {fileID: 6427401542312344658, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
       propertyPath: m_Name
       value: Marble Race
@@ -1080,18 +1068,6 @@ PrefabInstance:
     - target: {fileID: 6427401542312344659, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6427401542489338920, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8fc273a6fb5495347823cfd801a0b5fd, type: 3}
-    - target: {fileID: 6427401542489338923, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
-      propertyPath: xPositionThreshhold
-      value: -21
-      objectReference: {fileID: 0}
-    - target: {fileID: 6427401542489338923, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
-      propertyPath: scrollStartLocation.x
-      value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

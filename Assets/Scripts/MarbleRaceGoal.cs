@@ -6,7 +6,7 @@ using UnityEngine;
 public class MarbleRaceGoal : MonoBehaviour
 {
     MarbleRaceManager marbleRaceManager;
-    private float goalMoveSpeed = 0.1f;
+    private float goalMoveSpeed = 3f;
     private bool raceStarted = false;
 
     private void Awake()

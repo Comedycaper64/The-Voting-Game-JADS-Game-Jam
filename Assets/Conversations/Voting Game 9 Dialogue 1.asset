@@ -16,7 +16,7 @@ MonoBehaviour:
   characterImages:
   - {fileID: 0}
   characterTalkSound: {fileID: 8300000, guid: f26e509526f71484fa773e914da9f136, type: 3}
-  characterVoiceClip: {fileID: 0}
+  characterVoiceClip: {fileID: 8300000, guid: c8fb5c334d499ef43ad90da63afe7e07, type: 3}
   leftSideCharacterImage: 1
   rightSideCharacterImage: 0
   sentences:

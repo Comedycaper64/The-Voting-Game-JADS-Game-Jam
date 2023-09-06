@@ -379,6 +379,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9058464262079040141, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7ac3057cc54e9074cb0d2ae842479b84, type: 3}
+    - target: {fileID: 9058464262079040141, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9058464263546641143, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1599,7 +1607,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Zero Escape
+  m_text: 'Zero Escape,
+
+    Dujanah'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 40921998df27bd142b12482649bb0772, type: 2}
   m_sharedMaterial: {fileID: 7612015182515126499, guid: 40921998df27bd142b12482649bb0772, type: 2}
@@ -1703,7 +1713,7 @@ PrefabInstance:
     - target: {fileID: 7063436194319727560, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1c26a5e22cb992f4daa4b9a6a2d57a33, type: 3}
+      objectReference: {fileID: 21300000, guid: e39ea376c5249134baa81bcabbced6a4, type: 3}
     - target: {fileID: 7063436194319727561, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -1713,8 +1723,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7063436194319727561, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 413.99994
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063436194319727561, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -107.99997
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: 7063436194319727561, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1722,11 +1736,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7063436194319727562, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063436195130024805, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_text
+      value: = Bomb Defusal Fairy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063436195130024806, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 557.99994
       objectReference: {fileID: 0}
     - target: {fileID: 7063436195130024807, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7063436195357997166, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_text
@@ -1763,11 +1785,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7063436195357997167, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1000
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 7063436195357997167, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 7063436195357997167, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_AnchoredPosition.y

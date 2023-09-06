@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Word Game 2 Change Scene
   m_EditorClassIdentifier: 
   musicTrack: {fileID: 0}
-  changeToScene: 12
+  changeToScene: 13

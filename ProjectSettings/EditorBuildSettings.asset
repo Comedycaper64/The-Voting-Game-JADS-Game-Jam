@@ -9,36 +9,57 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: cd61eb32f8115c24497796bcb01a6df1
   - enabled: 1
-    path: Assets/Scenes/VotingGame1.unity
+    path: Assets/Scenes/VotingGame 1.unity
     guid: 7e4da11303c4e0048b395c2f19d9cd7f
   - enabled: 1
-    path: Assets/Scenes/VotingGame2.unity
+    path: Assets/Scenes/VotingGame 2.unity
     guid: 4f8ada7cce3bb5142a806ee4a247369a
   - enabled: 1
-    path: Assets/Scenes/VotingGame3.unity
+    path: Assets/Scenes/VotingGame 3.unity
     guid: fe71a71a8a3ece24bac76acf2b521bcf
   - enabled: 1
-    path: Assets/Scenes/VotingGame4.unity
+    path: Assets/Scenes/VotingGame 4.unity
     guid: 2000cdbb3c686804691174417d22d86b
   - enabled: 1
-    path: Assets/Scenes/WordGame1.unity
+    path: Assets/Scenes/WordGame 1.unity
     guid: f74b033d64c0f91479d5b2939470c7eb
   - enabled: 1
-    path: Assets/Scenes/VotingGame5.unity
+    path: Assets/Scenes/VotingGame 5.unity
     guid: 6eb1a2df42068954faf928b33934a983
   - enabled: 1
-    path: Assets/Scenes/VotingGame6.unity
+    path: Assets/Scenes/VotingGame 6.unity
     guid: 786a1bcc6623bea49943ae07c8c8f9e5
   - enabled: 1
-    path: Assets/Scenes/VotingGame7.unity
+    path: Assets/Scenes/VotingGame 7.unity
     guid: 45582386a6f47064caee5a3b615df098
   - enabled: 1
-    path: Assets/Scenes/VotingGame8.unity
+    path: Assets/Scenes/VotingGame 8.unity
     guid: 636cddc9d35412a479da037e0f3487a8
   - enabled: 1
-    path: Assets/Scenes/VotingGame9.unity
+    path: Assets/Scenes/VotingGame 9.unity
     guid: 7085c89545bdf4641975749a667d2260
   - enabled: 1
-    path: Assets/Scenes/WordGame2.unity
+    path: Assets/Scenes/VotingGame 10.unity
+    guid: c185c147bf813cc4aad71b06d6d9280c
+  - enabled: 1
+    path: Assets/Scenes/WordGame 2.unity
     guid: 6ca5b0f68f175624bbf107f76177fbf1
+  - enabled: 1
+    path: Assets/Scenes/VotingGame 11.unity
+    guid: f3667b4405c1df54e8da3451ac7f82cc
+  - enabled: 1
+    path: Assets/Scenes/WordGame 3.unity
+    guid: 356ff224588ae254abc557c2260a8f89
+  - enabled: 1
+    path: Assets/Scenes/MarbleRace 1.unity
+    guid: 3565696bd52146846acedffd17065147
+  - enabled: 1
+    path: Assets/Scenes/MarbleRace 2.unity
+    guid: 421ecb625523c804f9bfd7f51bf360d9
+  - enabled: 1
+    path: Assets/Scenes/MarbleRace 3.unity
+    guid: 305ff1ae31cf33b4abe804bd8a6e9821
+  - enabled: 1
+    path: Assets/Scenes/VotingGame 12.unity
+    guid: bcb0023aa660bee418f50be1a545302f
   m_configObjects: {}

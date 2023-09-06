@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: '"Joe"'
   characterImages:
-  - {fileID: 21300000, guid: e59ae1b2857eec944af1a34f55b6291c, type: 3}
+  - {fileID: 21300000, guid: c6da8f04afad8e544ad5e2ea562b3d7d, type: 3}
   characterTalkSound: {fileID: 8300000, guid: f26e509526f71484fa773e914da9f136, type: 3}
   characterVoiceClip: {fileID: 8300000, guid: c43fbfd5bcd07764dbe0cdbcdcbfc5c5, type: 3}
   leftSideCharacterImage: 1

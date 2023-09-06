@@ -13,7 +13,7 @@ public class MarbleRaceBackground : MonoBehaviour
     [SerializeField]
     private float xPositionThreshhold;
 
-    private float backgroundMoveSpeed = 5f;
+    private float backgroundMoveSpeed = 7.5f;
     private bool raceStarted = false;
 
     private void Awake()

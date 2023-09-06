@@ -1653,6 +1653,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Zero Escape,
 
+    Dujanah,
+
     Persona 4 Golden'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 40921998df27bd142b12482649bb0772, type: 2}
@@ -1757,7 +1759,7 @@ PrefabInstance:
     - target: {fileID: 7063436194319727560, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1c26a5e22cb992f4daa4b9a6a2d57a33, type: 3}
+      objectReference: {fileID: 21300000, guid: c99bd2b46d2936e46969595ba39292d0, type: 3}
     - target: {fileID: 7063436194319727561, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -1767,8 +1769,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7063436194319727561, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063436194319727561, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -107.99997
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 7063436194319727561, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1830,6 +1836,42 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 37958889}
+    - target: {fileID: 7063436195768497330, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dcbbde195d98dba44b2dd94ce840952f, type: 3}
+    - target: {fileID: 7063436195768497330, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063436195768497330, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063436195768497330, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063436195768497331, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063436195768497331, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063436195768497331, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063436195768497331, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063436195768497331, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7063436195768497340, guid: 4e6692bb6159c2d4ab3b403020c859c2, type: 3}
       propertyPath: m_IsActive
       value: 0

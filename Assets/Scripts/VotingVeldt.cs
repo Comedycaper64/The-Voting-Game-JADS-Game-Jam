@@ -22,6 +22,13 @@ public class VotingVeldt : MonoBehaviour
 
     [SerializeField]
     private List<int> safePositions = new List<int>();
+
+    [SerializeField]
+    private bool alternateWinCondition = false;
+
+    [SerializeField]
+    private int alternateWinVoteAmount;
+
     private List<GameEntry> gameEntries = new List<GameEntry>();
     private Dictionary<GameEntry, GameObject> entryToLayoutChild =
         new Dictionary<GameEntry, GameObject>();
@@ -57,13 +64,27 @@ public class VotingVeldt : MonoBehaviour
             timeText.text = timeTracker.ToString("F2");
             if (timeTracker <= 0f)
             {
-                if (CheckIfSafeFromCulling(targetGameEntry))
+                if (!alternateWinCondition)
                 {
-                    victoryScreen.gameObject.SetActive(true);
+                    if (CheckIfSafeFromCulling(targetGameEntry))
+                    {
+                        victoryScreen.gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        lossScreen.gameObject.SetActive(true);
+                    }
                 }
                 else
                 {
-                    lossScreen.gameObject.SetActive(true);
+                    if (targetGameEntry.GetUpvoteAmount() == alternateWinVoteAmount)
+                    {
+                        victoryScreen.gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        lossScreen.gameObject.SetActive(true);
+                    }
                 }
             }
         }
@@ -93,13 +114,16 @@ public class VotingVeldt : MonoBehaviour
         for (int i = 0; i < tempList.Count; i++)
         {
             entryToLayoutChild[tempList[i]].transform.SetSiblingIndex(i);
-            if (CheckIfSafeFromCulling(tempList[i]))
+            if (!alternateWinCondition)
             {
-                tempList[i].ToggleCutSprite(false);
-            }
-            else
-            {
-                tempList[i].ToggleCutSprite(true);
+                if (CheckIfSafeFromCulling(tempList[i]))
+                {
+                    tempList[i].ToggleCutSprite(false);
+                }
+                else
+                {
+                    tempList[i].ToggleCutSprite(true);
+                }
             }
         }
     }

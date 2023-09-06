@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a64bceacac0ac4d8cd34f46f777598, type: 3}
   m_Name: Word Game 2 Dialogue 2
   m_EditorClassIdentifier: 
-  characterName: ???
+  characterName: The Third Radiant Angel
   characterImages:
   - {fileID: 0}
   characterTalkSound: {fileID: 8300000, guid: f26e509526f71484fa773e914da9f136, type: 3}
@@ -20,10 +20,17 @@ MonoBehaviour:
   leftSideCharacterImage: 0
   rightSideCharacterImage: 1
   sentences:
-  - And it did come...
-  - Many brave games were felled.
-  - Fire Emblem, Xenoblade 1, and Yakuza Kiwami among them.
-  - Half-Life 2? Feh. What a boring choice. A game barren of any potential stream
-    derailing hijinks.
-  - Oh well, I shall let them have their meagre prize.
-  - They'll need any victory that they can get, for the reckoning of Votos comes!
+  - The four faces of Davina Cage laugh in unison and speak their legendary greeting...
+  - '"MERRY CHRISTMAS!" the four voices echo together across the Veldt.'
+  - 'Then they take turns to speak.
+
+    Face One says: "We have arrived as it was
+    ordained. What you did to Purple-chan was foretold in our Indigo Prophecy. We
+    will switch things up."'
+  - "Face Two says: \"You've done okay but it's still just a tad boring here\u2026
+    I think I will bring a Heavy Rain!\u2026 \u2026of meteorites!"
+  - 'Face Three says: "We were not always Four, or Three, or Two. I mark the moment
+    we went Beyond: Two Souls. I will right some of the wrongs in this mess."'
+  - "Face Four says: \u2026 nothing? It just laughs at the disorder on the Veldt.
+    Perhaps the most Human reaction but it still disturbs you."
+  - The other faces begin to laugh too.

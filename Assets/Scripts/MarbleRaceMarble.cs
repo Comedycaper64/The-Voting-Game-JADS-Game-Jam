@@ -20,6 +20,9 @@ public class MarbleRaceMarble : MonoBehaviour
     private float marbleDropTime = 999f;
     private float timer = 0f;
 
+    [SerializeField]
+    private AudioClip dropAudioClip;
+
     private void Awake()
     {
         marbleRaceManager = GetComponentInParent<MarbleRaceManager>();
@@ -41,6 +44,14 @@ public class MarbleRaceMarble : MonoBehaviour
             if (timer >= marbleDropTime)
             {
                 gameObject.AddComponent<Rigidbody2D>();
+                if (dropAudioClip && SoundManager.Instance)
+                {
+                    AudioSource.PlayClipAtPoint(
+                        dropAudioClip,
+                        Camera.main.transform.position,
+                        SoundManager.Instance.GetSoundEffectVolume()
+                    );
+                }
                 RaceEnd();
                 Destroy(gameObject, 3f);
             }

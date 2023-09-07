@@ -21,6 +21,12 @@ public class WordGameLetter : MonoBehaviour
     private float lifetime;
     private float maxLifetime = 5f;
 
+    [SerializeField]
+    private AudioClip correctLetterSFX;
+
+    [SerializeField]
+    private AudioClip wrongLetterSFX;
+
     private void Update()
     {
         if (moving)
@@ -58,6 +64,7 @@ public class WordGameLetter : MonoBehaviour
 
     public void CorrectLetter(RectTransform letterAnchor)
     {
+        PlayButtonPress(true);
         backgroundImage.color = new Color(1, 1, 1, 1);
         letterText.color = new Color(0, 0, 0, 1);
         moving = false;
@@ -68,11 +75,37 @@ public class WordGameLetter : MonoBehaviour
         rectTransform.offsetMin = new Vector2();
     }
 
-    public void IncorrectLetter() { }
+    public void IncorrectLetter()
+    {
+        PlayButtonPress(false);
+    }
 
     public void SetPosition(Vector3 newPosition)
     {
         RectTransform rectTransform = GetComponent<RectTransform>();
         rectTransform.anchoredPosition = newPosition;
+    }
+
+    public void PlayButtonPress(bool correct)
+    {
+        if (SoundManager.Instance)
+        {
+            if (correct)
+            {
+                AudioSource.PlayClipAtPoint(
+                    correctLetterSFX,
+                    Camera.main.transform.position,
+                    SoundManager.Instance.GetSoundEffectVolume()
+                );
+            }
+            else
+            {
+                AudioSource.PlayClipAtPoint(
+                    wrongLetterSFX,
+                    Camera.main.transform.position,
+                    SoundManager.Instance.GetSoundEffectVolume()
+                );
+            }
+        }
     }
 }

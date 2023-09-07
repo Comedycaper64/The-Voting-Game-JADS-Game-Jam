@@ -19,6 +19,9 @@ public class DialogueManager : MonoBehaviour
     private TextMeshProUGUI dialogueText;
 
     [SerializeField]
+    private Image darkDialogueBackground;
+
+    [SerializeField]
     private Image darkBackground;
 
     [SerializeField]
@@ -194,6 +197,19 @@ public class DialogueManager : MonoBehaviour
             {
                 SoundManager.Instance.SetMusicTrack(changeScene.musicTrack);
             }
+        }
+
+        if (changeScene.backgroundChange)
+        {
+            darkBackground.sprite = changeScene.backgroundChange;
+            darkBackground.color = new Color(1f, 1f, 1f, 1f);
+            darkDialogueBackground.enabled = false;
+        }
+        else
+        {
+            darkBackground.sprite = null;
+            darkBackground.color = new Color(0f, 0f, 0f, 0.8f);
+            darkDialogueBackground.enabled = true;
         }
         EndDialogue();
     }

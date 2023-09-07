@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Voting Game 6 Conversation
   m_EditorClassIdentifier: 
   conversationNodes:
+  - {fileID: 11400000, guid: b4fc73224e43a8c498201b3e0e3d8f5a, type: 2}
   - {fileID: 11400000, guid: d5f25fc3d64280a48b681438f22e6cf5, type: 2}
   - {fileID: 11400000, guid: 1e0ea1b8a102d334c927ef34447c0ebf, type: 2}
   - {fileID: 11400000, guid: 38e29d1b34740414e97c59f29d6df5a4, type: 2}
@@ -21,6 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9b3429a87a571bc4eac1d4b39600d766, type: 2}
   - {fileID: 11400000, guid: 18aee5ebdab3f5f4ebaa9ccc2985e188, type: 2}
   - {fileID: 11400000, guid: a684e07c379925d44a55b762a0bb89a0, type: 2}
+  - {fileID: 11400000, guid: 4b49c554710a1994d8b1537d8abf6dd6, type: 2}
   - {fileID: 11400000, guid: 48d0eea9695c78646acab68e40e0ef96, type: 2}
   - {fileID: 11400000, guid: 77f1c7628fec0ba4a82755f6fe630494, type: 2}
   - {fileID: 11400000, guid: b54d03bc3a0290648a8ccaf83ca50f72, type: 2}

@@ -271,12 +271,20 @@ PrefabInstance:
       value: HOW
       objectReference: {fileID: 0}
     - target: {fileID: 7368361805073895685, guid: 34722fd7e764fd94ba82013341dafdea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368361805073895685, guid: 34722fd7e764fd94ba82013341dafdea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1459744360}
     - target: {fileID: 7368361805073895685, guid: 34722fd7e764fd94ba82013341dafdea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartConversation
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368361805073895685, guid: 34722fd7e764fd94ba82013341dafdea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7368361805073895685, guid: 34722fd7e764fd94ba82013341dafdea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1336,7 +1344,7 @@ PrefabInstance:
     - target: {fileID: 6427401542027097617, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
       propertyPath: dropAudioClip
       value: 
-      objectReference: {fileID: 8300000, guid: c246acac25d6fb74ba3b0de3ab2962bd, type: 3}
+      objectReference: {fileID: 8300000, guid: 24b242994369d0040975784cfcfdd90e, type: 3}
     - target: {fileID: 6427401542027097617, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
       propertyPath: speedModifier
       value: 8
@@ -1404,7 +1412,7 @@ PrefabInstance:
     - target: {fileID: 6427401542532448257, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
       propertyPath: dropAudioClip
       value: 
-      objectReference: {fileID: 8300000, guid: c5477f21b88cee94ea8ddd96de55bdd1, type: 3}
+      objectReference: {fileID: 8300000, guid: 007decbcde9d2004b890b90df5ff9fe0, type: 3}
     - target: {fileID: 6427401542532448257, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
       propertyPath: speedModifier
       value: 7
@@ -1419,7 +1427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6427401543114112577, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
       propertyPath: speedModifier
-      value: 0.5
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427401543367128547, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
+      propertyPath: speedModifier
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6427401543597211382, guid: f813e3683679e0940ad46ac2052ae592, type: 3}
       propertyPath: m_LocalPosition.x

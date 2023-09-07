@@ -8,4 +8,5 @@ public class DialogueChangeScene : ConversationNode
 {
     public AudioClip musicTrack;
     public int changeToScene = -1;
+    public Sprite backgroundChange;
 }

@@ -14,6 +14,9 @@ public class SoundManager : MonoBehaviour
     private AudioClip sfxChangeSample;
 
     [SerializeField]
+    private AudioClip uiButtonPressSound;
+
+    [SerializeField]
     [Range(0f, 1f)]
     private float sfxVolume;
 
@@ -29,7 +32,7 @@ public class SoundManager : MonoBehaviour
         SetUpSingleton();
         Instance = this;
         audioSource = GetComponent<AudioSource>();
-        audioSource.volume = GetMusicVolume();
+        SetMusicVolume(GetMusicVolume());
         SoundSlider.OnAnySoundSliderChanged += SoundSlider_OnAnySliderChanged;
     }
 
@@ -80,14 +83,23 @@ public class SoundManager : MonoBehaviour
 
     public void SetMusicVolume(float volume)
     {
-        musicVolume = volume * musicQuietFactor;
-        audioSource.volume = musicVolume;
+        musicVolume = volume;
+        audioSource.volume = musicVolume * musicQuietFactor;
     }
 
     public void SetMusicTrack(AudioClip musicTrack)
     {
         audioSource.clip = musicTrack;
         audioSource.Play();
+    }
+
+    public void PlayUIButtonPress()
+    {
+        AudioSource.PlayClipAtPoint(
+            uiButtonPressSound,
+            Camera.main.transform.position,
+            GetSoundEffectVolume()
+        );
     }
 
     private void SoundSlider_OnAnySliderChanged(object sender, SliderStruct changedSlider)

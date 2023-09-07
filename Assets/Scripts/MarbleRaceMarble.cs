@@ -11,6 +11,9 @@ public class MarbleRaceMarble : MonoBehaviour
     private float speedModifier;
 
     [SerializeField]
+    private Transform marbleVisual;
+
+    [SerializeField]
     private bool playerMarble = false;
     private float marbleMoveSpeed = 0.1f;
     private float marbleMaxMoveSpeed = 0.5f;
@@ -41,6 +44,11 @@ public class MarbleRaceMarble : MonoBehaviour
         if (raceStarted)
         {
             timer += Time.deltaTime;
+
+            marbleVisual.Rotate(
+                Vector3.back * 350f * speedModifier * marbleMoveSpeed * Time.deltaTime
+            );
+
             if (timer >= marbleDropTime)
             {
                 gameObject.AddComponent<Rigidbody2D>();

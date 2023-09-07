@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44a51ccc1929e764b8585c39c2e31056, type: 3}
-  m_Name: Voting Game 9 Change Scene
+  m_Name: Voting Game 6 Change Scene 1
   m_EditorClassIdentifier: 
-  musicTrack: {fileID: 8300000, guid: 75bba7bf285dca341940d55679a764a5, type: 3}
-  changeToScene: 11
-  backgroundChange: {fileID: 0}
+  musicTrack: {fileID: 0}
+  changeToScene: -1
+  backgroundChange: {fileID: 21300000, guid: eba3cd07d7ff39a45a80a4326b2a0db6, type: 3}

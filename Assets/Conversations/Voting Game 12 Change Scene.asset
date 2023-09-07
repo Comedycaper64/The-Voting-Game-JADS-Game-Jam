@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a51ccc1929e764b8585c39c2e31056, type: 3}
   m_Name: Voting Game 12 Change Scene
   m_EditorClassIdentifier: 
-  musicTrack: {fileID: 0}
+  musicTrack: {fileID: 8300000, guid: d5a1ec3de937778488b86b7b1dd87a34, type: 3}
   changeToScene: 0

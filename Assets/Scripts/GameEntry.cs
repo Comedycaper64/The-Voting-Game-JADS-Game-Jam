@@ -95,6 +95,7 @@ public class GameEntry : MonoBehaviour
             upvoted = false;
         }
         upvoteText.text = upvoteAmount.ToString();
+        PlayButtonPress();
         OnEntryNumberChanged?.Invoke();
     }
 
@@ -113,12 +114,21 @@ public class GameEntry : MonoBehaviour
             downvoted = false;
         }
         upvoteText.text = upvoteAmount.ToString();
+        PlayButtonPress();
         OnEntryNumberChanged?.Invoke();
     }
 
     public int GetUpvoteAmount()
     {
         return upvoteAmount;
+    }
+
+    private void PlayButtonPress()
+    {
+        if (SoundManager.Instance)
+        {
+            SoundManager.Instance.PlayUIButtonPress();
+        }
     }
 
     public void ToggleCutSprite(bool toggle)

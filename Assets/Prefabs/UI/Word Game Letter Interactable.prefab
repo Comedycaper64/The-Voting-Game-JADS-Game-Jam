@@ -366,6 +366,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterText: {fileID: 1534629407204830874}
   backgroundImage: {fileID: 1534629407582246617}
+  correctLetterSFX: {fileID: 8300000, guid: da1946d1bba0a6949ac56a360cab206d, type: 3}
+  wrongLetterSFX: {fileID: 8300000, guid: 7b855aaa2ad57b3448380dd44131e1b3, type: 3}
 --- !u!114 &8063382001164771612
 MonoBehaviour:
   m_ObjectHideFlags: 0

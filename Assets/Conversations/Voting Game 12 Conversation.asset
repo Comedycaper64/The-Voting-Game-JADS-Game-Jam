@@ -14,10 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationNodes:
   - {fileID: 11400000, guid: e029720c63a7a2c4180bd457a70b331a, type: 2}
+  - {fileID: 11400000, guid: 93f7b94a238240e43b134600291c2320, type: 2}
   - {fileID: 11400000, guid: 690163f8e6686124dbda60a36d3a8a7f, type: 2}
+  - {fileID: 11400000, guid: 94d2235064294414bb2dd29546eff1d4, type: 2}
+  - {fileID: 11400000, guid: 74335e35420c4cd4ab8a1251249b23e7, type: 2}
   - {fileID: 11400000, guid: 067cbd7abd676be4c91c2564d50079be, type: 2}
   - {fileID: 11400000, guid: 4e4b8db0a06972048bb9c9c6a44f62cf, type: 2}
   - {fileID: 11400000, guid: 126678f3380d6de40814f60e225fc687, type: 2}
+  - {fileID: 11400000, guid: e37c6f18116eea84381231d10fb65733, type: 2}
   - {fileID: 11400000, guid: 13b52cedd2925854eb9dd62e367cd658, type: 2}
   - {fileID: 11400000, guid: b26c370ef55c05c44a3c94a53de1700d, type: 2}
   - {fileID: 11400000, guid: bff73a48f56072745996f0710a1a59d2, type: 2}
@@ -26,6 +30,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 50514a717ea361f47af88995d6bf48ad, type: 2}
   - {fileID: 11400000, guid: d0c0c1547fb332847a7821f6c1b4577d, type: 2}
   - {fileID: 11400000, guid: 69fed0e995bc19d419d6840e8c0ba207, type: 2}
+  - {fileID: 11400000, guid: e9b5ab32972ef034cb2f00e6fee1dc7d, type: 2}
   - {fileID: 11400000, guid: 7edc45a3fd44a2547b98f33f8f5aa8c6, type: 2}
   - {fileID: 11400000, guid: 312079ae26a272a4c909f19fa334221f, type: 2}
   - {fileID: 11400000, guid: 79085309423b16645ad1ff81866556b9, type: 2}

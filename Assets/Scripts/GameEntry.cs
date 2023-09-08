@@ -45,6 +45,8 @@ public class GameEntry : MonoBehaviour
     [SerializeField]
     private bool downvoted;
 
+    private bool canVote = true;
+
     public enum EntryType
     {
         game,
@@ -57,6 +59,12 @@ public class GameEntry : MonoBehaviour
     {
         upvoteText.text = upvoteAmount.ToString();
         gameNameText.text = gameName;
+        VotingVeldt.OnVotingFinished += DisableVoting;
+    }
+
+    private void OnDisable()
+    {
+        VotingVeldt.OnVotingFinished -= DisableVoting;
     }
 
     private void Start()
@@ -82,6 +90,11 @@ public class GameEntry : MonoBehaviour
 
     public void UpvoteEntry()
     {
+        if (!canVote)
+        {
+            return;
+        }
+
         if (!upvoted)
         {
             upvoteAmount++;
@@ -101,6 +114,10 @@ public class GameEntry : MonoBehaviour
 
     public void DownvoteEntry()
     {
+        if (!canVote)
+        {
+            return;
+        }
         if (!downvoted)
         {
             upvoteAmount--;
@@ -134,5 +151,10 @@ public class GameEntry : MonoBehaviour
     public void ToggleCutSprite(bool toggle)
     {
         cutSprite.SetActive(toggle);
+    }
+
+    private void DisableVoting()
+    {
+        canVote = false;
     }
 }

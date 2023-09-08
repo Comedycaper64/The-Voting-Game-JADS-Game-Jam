@@ -151,13 +151,17 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3758959119997620043, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -97.20001
+      objectReference: {fileID: 0}
     - target: {fileID: 5297743916538360189, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: timeLimit
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5297743916731214610, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: lossScreen
@@ -303,6 +307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Voting Minigame
       objectReference: {fileID: 0}
+    - target: {fileID: 5841462102589791922, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.700012
+      objectReference: {fileID: 0}
     - target: {fileID: 6174665900360080009, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -420,6 +428,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 2a83cabf613aabe4fb0d39cef8b5f2cb, type: 3}
     - target: {fileID: 9058464261831381244, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058464262079040141, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7ac3057cc54e9074cb0d2ae842479b84, type: 3}
+    - target: {fileID: 9058464262079040141, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
@@ -2234,7 +2250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -75}
+  m_AnchoredPosition: {x: 150, y: -90}
   m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016007391
@@ -2261,7 +2277,9 @@ MonoBehaviour:
 
     Dujanah,
 
-    Persona 4 Golden'
+    Persona 4 Golden,
+
+    Dragon Angel'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 40921998df27bd142b12482649bb0772, type: 2}
   m_sharedMaterial: {fileID: 7612015182515126499, guid: 40921998df27bd142b12482649bb0772, type: 2}

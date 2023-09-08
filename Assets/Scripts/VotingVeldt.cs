@@ -8,6 +8,8 @@ using UnityEngine;
 
 public class VotingVeldt : MonoBehaviour
 {
+    public static Action OnVotingFinished;
+
     [SerializeField]
     private float timeLimit = 10f;
 
@@ -63,6 +65,8 @@ public class VotingVeldt : MonoBehaviour
             timeText.text = timeTracker.ToString("F2");
             if (timeTracker <= 0f)
             {
+                timeText.text = "0.00";
+                OnVotingFinished?.Invoke();
                 if (!alternateWinCondition)
                 {
                     if (CheckIfSafeFromCulling(targetGameEntry))

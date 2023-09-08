@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44a64bceacac0ac4d8cd34f46f777598, type: 3}
-  m_Name: Voting Game 12 Dialogue 7
+  m_Name: Voting Game 12 Dialogue 1 1
   m_EditorClassIdentifier: 
-  characterName: Bomb-chan
+  characterName: '"Joe"'
   characterImages:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: c6da8f04afad8e544ad5e2ea562b3d7d, type: 3}
   characterTalkSound: {fileID: 8300000, guid: f26e509526f71484fa773e914da9f136, type: 3}
-  characterVoiceClip: {fileID: 0}
+  characterVoiceClip: {fileID: 8300000, guid: 62edf2f8ac3e3004a946bc89867ba43c, type: 3}
   leftSideCharacterImage: 1
   rightSideCharacterImage: 0
   sentences:
-  - '"Are you sure you can wield that?" Bomb-chan speaks finally. She spent the last
-    few moments looking at her new wing. Then shrugged and accepted it.'
+  - What's-

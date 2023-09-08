@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -175
       objectReference: {fileID: 0}
+    - target: {fileID: 3758959119997620043, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -97.20001
+      objectReference: {fileID: 0}
     - target: {fileID: 5297743916538360189, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -275,6 +279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Voting Minigame
       objectReference: {fileID: 0}
+    - target: {fileID: 5841462102589791922, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.700012
+      objectReference: {fileID: 0}
     - target: {fileID: 6585612656145131475, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -321,7 +329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7026651902483044816, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: upvoteAmount
-      value: 23
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7026651902483044829, guid: 75fd9c6fbc58c58469827daa531016d8, type: 3}
       propertyPath: m_IsActive

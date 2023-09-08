@@ -53,6 +53,7 @@ public class WordGameManager : MonoBehaviour
             timeText.text = timeTracker.ToString("F2");
             if (timeTracker <= 0f)
             {
+                timeText.text = "0.00";
                 gameActive = false;
                 StopCoroutine(minigameCoroutine);
                 EndWordGame(false);

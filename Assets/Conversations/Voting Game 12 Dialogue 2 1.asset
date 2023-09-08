@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44a64bceacac0ac4d8cd34f46f777598, type: 3}
-  m_Name: Voting Game 12 Dialogue 7
+  m_Name: Voting Game 12 Dialogue 2 1
   m_EditorClassIdentifier: 
-  characterName: Bomb-chan
+  characterName: ???
   characterImages:
   - {fileID: 0}
   characterTalkSound: {fileID: 8300000, guid: f26e509526f71484fa773e914da9f136, type: 3}
@@ -20,5 +20,10 @@ MonoBehaviour:
   leftSideCharacterImage: 1
   rightSideCharacterImage: 0
   sentences:
-  - '"Are you sure you can wield that?" Bomb-chan speaks finally. She spent the last
-    few moments looking at her new wing. Then shrugged and accepted it.'
+  - Something erupts from her chest. Then, in one instant, her entire body is obliterated.
+    A rain of blood and bullshit spews over the Veldt.
+  - Votos floats in the place that Davina Cage once occupied. Somehow clean. Pristine.
+    Her eyes sweep the Veldt.
+  - Everyone could vote? A lesser Dragon Angel in Outer Heaven? A BOMB DEFUSED? Ace
+    Combat 7 somehow won? METEORITE DOWNVOTE BUTTONS?!
+  - This cannot be.

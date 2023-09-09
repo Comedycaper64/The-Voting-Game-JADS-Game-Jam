@@ -17,7 +17,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bea9a66ff5c981745b792d52c419f6a6, type: 3}
   characterTalkSound: {fileID: 8300000, guid: f26e509526f71484fa773e914da9f136, type: 3}
   characterVoiceClip: {fileID: 0}
-  leftSideCharacterImage: 0
-  rightSideCharacterImage: 1
+  leftSideCharacterImage: 1
+  rightSideCharacterImage: 0
   sentences:
   - "\"Oh\u2026 Well\u2026 yeah, that's true. I hadn't forgotten. Just\u2026\""

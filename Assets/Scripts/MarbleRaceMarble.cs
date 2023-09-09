@@ -68,6 +68,10 @@ public class MarbleRaceMarble : MonoBehaviour
             if (playerMarble && Input.GetMouseButtonDown(0))
             {
                 marbleMoveSpeed = Mathf.Min(marbleMoveSpeed + 0.05f, marbleMaxMoveSpeed);
+                if (SoundManager.Instance)
+                {
+                    SoundManager.Instance.PlayUIButtonPress();
+                }
             }
             if (marbleMoveSpeed >= 0.1f)
             {
